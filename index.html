@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festividad Virgen del Carmen de Paucartambo</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <img src="imagenes/imagen_fondo.png" alt="Imagen de fondo" class="background-image">
+    <div class="container">
+        <div class="logo-title">
+            <img src="imagenes/logo_municipalidad.png" alt="Logo Municipalidad" class="logo">
+            <h1>Festividad de la Virgen del Carmen 2024</h1>
+        </div>
+        <div class="header-images">
+            <div class="right">
+                <img src="imagenes/imagen_virgen.png" alt="Imagen de la Virgen" id="virgen">
+            </div>
+        </div>
+        <div class="message" id="message"></div>
+        <div class="buttons">
+            <button onclick="location.href='cronograma.html'">Programa General</button>
+            <button id="planoButton" onclick="toggleMapOptions()">Plano de Ubicación</button>
+        </div>
+        <div id="mapOptions" class="map-buttons">
+            <button onclick="location.href='mapa_transito.html'">Mapa de Tránsito</button>
+            <button onclick="location.href='mapa_lugares.html'">Mapa de Lugares</button>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

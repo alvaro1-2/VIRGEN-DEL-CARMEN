@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Lugares - Festividad Virgen del Carmen</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <img src="imagenes/imagen_fondo.png" alt="Imagen de fondo" class="background-image">
+    <div class="container">
+        <h1 class="main-title">Mapa de Lugares</h1>
+        <div class="buttons">
+            <button onclick="location.href='index.html'">Volver al Menú Principal</button>
+            <button onclick="location.href='mapa_transito.html'">Ver Mapa de Tránsito</button>
+            <button class="download" onclick="window.open('https://drive.google.com/yourdrivefile', '_blank')">
+                Descargar Mapa de Lugares
+                <img src="imagenes/drive_logo.png" alt="Drive Logo" class="drive-logo">
+            </button>
+        </div>
+        <div class="map-container">
+            <img src="imagenes/mapa_lugares.svg" alt="Mapa de Lugares" class="responsive-svg">
+        </div>
+        <h2 class="sub-title">Festividad de la Virgen del Carmen 2024</h2>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
