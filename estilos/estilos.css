@@ -58,7 +58,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -10px; /* Espacio entre el logo y el título */
+    margin-top: -5px; /* Espacio entre el logo y el título */
 }
 
 .logo-title img {
@@ -69,8 +69,9 @@ body {
 h1 {
     font-family: 'Chopin Script', sans-serif;
     font-size: 60px;
-    text-shadow: 3px 3px 6px black, inset 0 0 5px rgba(0, 0, 0, 0.7); /* Sombra paralela y sombra interior negra */
-    margin-top: -30px; /* Ajustar según sea necesario */
+    text-shadow: 3px 3px 6px black, inset 5px 5px 5px rgba(0, 0, 0, 0.7); /* Sombra paralela y sombra interior negra */
+    margin-top: -10px; /* Ajustar según sea necesario */
+    line-height: 1.2; /* Ajustar el espaciado entre líneas */
 }
 
 .header-images {
@@ -88,7 +89,7 @@ h1 {
 }
 
 .buttons {
-    margin-top: 30px; /* Ajustar según sea necesario */
+    margin-top: -30px; /* Ajustar según sea necesario */
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -268,5 +269,9 @@ h2.sub-title {
     .background-image {
         width: 100%;
         height: 100%;
+    }
+
+    h1 {
+        line-height: 1.1; /* Ajustar el espaciado entre líneas en pantallas pequeñas */
     }
 }
