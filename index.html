@@ -10,23 +10,32 @@
     <img src="imagenes/imagen_fondo.png" alt="Imagen de fondo" class="background-image">
     <div class="container">
         <div class="logo-title">
-            <img src="imagenes/logo_municipalidad.png" alt="Logo Municipalidad" class="logo">
+            <img src="imagenes/logo_municipalidad.png" alt="Logo Municipalidad">
             <h1>Festividad de la Virgen del Carmen 2024</h1>
         </div>
         <div class="header-images">
             <div class="right">
-                <img src="imagenes/imagen_virgen.png" alt="Imagen de la Virgen" id="virgen">
+                <img src="imagenes/imagen_virgen.png" alt="Imagen Virgen del Carmen">
             </div>
         </div>
-        <div class="message" id="message"></div>
         <div class="buttons">
             <button onclick="location.href='cronograma.html'">Programa General</button>
-            <button id="planoButton" onclick="toggleMapOptions()">Plano de Ubicación</button>
+            <button onclick="toggleMapOptions()">Plano de Ubicación</button>
+            <button onclick="location.href='lugares_turisticos.html'">Lugares Turísticos</button>
         </div>
         <div id="mapOptions" class="map-buttons">
             <button onclick="location.href='mapa_transito.html'">Mapa de Tránsito</button>
             <button onclick="location.href='mapa_lugares.html'">Mapa de Lugares</button>
         </div>
+    </div>
+    <div class="footer">
+        <p>Unidad de Informática y de Sistemas de la Municipalidad Provincial de Paucartambo © 2024</p>
+        <p>
+            <a href="#">Últimas Publicaciones</a> · 
+            <a href="#">Facebook</a> · 
+            <a href="mailto:info@paucartambo.gob.pe">Correo</a> · 
+            <a href="#">Ghost</a>
+        </p>
     </div>
     <script src="scripts/script.js"></script>
 </body>

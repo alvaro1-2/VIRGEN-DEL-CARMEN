@@ -83,17 +83,8 @@ h1 {
     top: -30px; /* Ajustar para que los mensajes comiencen desde la mitad de la imagen */
 }
 
-.message {
-    margin: 30px 0 20px 0; /* Ajustar márgenes para dejar espacio para los mensajes */
-    font-family: 'Type Machine', monospace;
-    font-size: 24px;
-    height: 60px; /* Ajustar según sea necesario */
-    text-shadow: 2px 2px 5px black; /* Sombra negra */
-    margin-top: -70px;
-}
-
 .buttons {
-    margin-top: 120px; /* Ajustar según sea necesario para dejar espacio para los mensajes */
+    margin-top: 90px; /* Ajustar según sea necesario para dejar espacio para los mensajes */
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -114,7 +105,7 @@ button {
     align-items: center;
     justify-content: center; /* Centrar el texto en el botón */
     width: auto; /* Ajustar el ancho del botón al contenido */
-    min-width: 150px; /* Ajuste un ancho mínimo si es necesario */
+    min-width: 150px; /* Establecer un ancho mínimo */
 }
 
 button:hover {
@@ -138,11 +129,19 @@ button.download:hover {
 
 .map-container {
     margin-top: 20px;
+    overflow: hidden; /* Ocultar desbordamiento del contenedor del mapa */
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
 }
 
 .responsive-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 h2.sub-title {
@@ -163,7 +162,30 @@ h2.sub-title {
 
 .map-buttons button {
     flex: 1; /* Asegurar que los botones ocupen el mismo espacio */
-    max-width: 150px; /* Limitar el ancho máximo de los botones */
+    max-width: 200px; /* Limitar el ancho máximo de los botones */
+}
+
+/* Pie de página */
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #888888; /* Color gris para el texto */
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer a {
+    color: #888888; /* Color gris para los enlaces */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 /* Media Queries para responsividad */
