@@ -22,6 +22,9 @@ body {
     overflow-y: auto; /* Permitir el desplazamiento vertical */
     overflow-x: hidden; /* Evitar el desplazamiento horizontal */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .background-image {
@@ -47,6 +50,7 @@ body {
     max-width: 800px;
     z-index: 3;
     position: relative;
+    flex: 1; /* Para que ocupe el espacio disponible */
 }
 
 .logo-title {
@@ -84,7 +88,7 @@ h1 {
 }
 
 .buttons {
-    margin-top: 90px; /* Ajustar según sea necesario para dejar espacio para los mensajes */
+    margin-top: 30px; /* Ajustar según sea necesario */
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -92,9 +96,9 @@ h1 {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 15px 25px; /* Aumentar tamaño del botón */
     margin: 5px;
-    font-size: 16px;
+    font-size: 18px; /* Aumentar tamaño de la letra */
     cursor: pointer;
     background-color: #0099cc; /* Azul del botón */
     color: white;
@@ -105,7 +109,7 @@ button {
     align-items: center;
     justify-content: center; /* Centrar el texto en el botón */
     width: auto; /* Ajustar el ancho del botón al contenido */
-    min-width: 150px; /* Establecer un ancho mínimo */
+    min-width: 160px; /* Establecer un ancho mínimo */
 }
 
 button:hover {
@@ -129,19 +133,11 @@ button.download:hover {
 
 .map-container {
     margin-top: 20px;
-    overflow: hidden; /* Ocultar desbordamiento del contenedor del mapa */
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
 }
 
 .responsive-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 h2.sub-title {
@@ -165,13 +161,70 @@ h2.sub-title {
     max-width: 200px; /* Limitar el ancho máximo de los botones */
 }
 
+.tourist-place {
+    background-color: rgba(0, 47, 59, 0.8); /* Fondo semitransparente */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.tourist-place img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tourist-place h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.tourist-place p {
+    font-size: 16px;
+}
+
+.details-button, .back-button {
+    background-color: #007bb5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.details-button:hover, .back-button:hover {
+    background-color: #005f87;
+}
+
+.details {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.details h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.details ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+}
+
+.details p {
+    font-size: 16px;
+}
+
 /* Pie de página */
 .footer {
-    margin-top: 20px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     color: #888888; /* Color gris para el texto */
     font-size: 14px;
+    text-align: center;
 }
 
 .footer p {
@@ -195,8 +248,8 @@ h2.sub-title {
     }
     
     button {
-        font-size: 14px;
-        padding: 8px 15px;
+        font-size: 16px; /* Ajustar el tamaño de la letra en pantallas pequeñas */
+        padding: 12px 20px; /* Ajustar el tamaño del botón en pantallas pequeñas */
     }
 
     .buttons, .map-buttons {

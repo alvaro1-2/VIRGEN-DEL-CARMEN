@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa de Tránsito - Festividad Virgen del Carmen</title>
+    <title>Mapa de Tránsito</title>
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
@@ -13,16 +13,24 @@
         <div class="buttons">
             <button onclick="location.href='index.html'">Volver al Menú Principal</button>
             <button onclick="location.href='mapa_lugares.html'">Ver Mapa de Lugares</button>
-            <button class="download" onclick="window.open('https://drive.google.com/yourtransitfile', '_blank')">
+            <button class="download" onclick="location.href='https://drive.google.com/file/d/1yNVxA7QXM6NC1ouLd38LB9iqo1DBwgOX/view?usp=sharing'">
                 Descargar Mapa de Tránsito
-                <img src="imagenes/drive_logo.png" alt="Drive Logo" class="drive-logo">
+                <img src="imagenes/drive_logo.png" alt="Google Drive" class="drive-logo">
             </button>
         </div>
         <div class="map-container">
-            <img src="imagenes/mapa_transito.svg" alt="Mapa de Tránsito" class="responsive-svg">
+            <object class="responsive-svg" data="imagenes/mapa_transito.svg" type="image/svg+xml"></object>
         </div>
         <h2 class="sub-title">Festividad de la Virgen del Carmen 2024</h2>
     </div>
-    <script src="scripts/script.js"></script>
+    <div class="footer">
+        <p>Unidad de Informática y de Sistemas de la Municipalidad Provincial de Paucartambo © 2024</p>
+        <p>
+            <a href="#">Últimas Publicaciones</a> · 
+            <a href="#">Facebook</a> · 
+            <a href="mailto:info@paucartambo.gob.pe">Correo</a> · 
+            <a href="#">Ghost</a>
+        </p>
+    </div>
 </body>
 </html>
