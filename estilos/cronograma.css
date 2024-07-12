@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Chopin Script';
+    src: url('../fonts/ChopinScript.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -5,8 +12,12 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
-    overflow: auto; /* Permitir el desplazamiento */
+    overflow-y: auto; /* Permitir el desplazamiento vertical */
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .background-image {
@@ -27,110 +38,148 @@ body {
 }
 
 .container {
-    margin: 20px auto;
+    margin: 20px auto 20px 15px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 800px;
     z-index: 3;
     position: relative;
-    text-align: left; /* Alinear el contenido a la izquierda */
+    flex: 1; /* Para que ocupe el espacio disponible */
+    background-color: rgba(0, 47, 59, 0.8); /* Fondo semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
+    padding: 20px 20px 50px 20px; /* Agregar espacio a los lados y al fondo */
 }
 
-h1.main-title {
+.main-title {
     font-family: 'Chopin Script', sans-serif;
     font-size: 60px;
     text-shadow: 3px 3px 6px black, inset 0 0 5px rgba(0, 0, 0, 0.7); /* Sombra paralela y sombra interior negra */
-    margin-top: -30px; /* Ajustar según sea necesario */
+    margin-top: 0;
     text-align: center; /* Mantener el título centrado */
+    color: #ffffff; /* Color dorado para el título */
 }
 
-.buttons {
-    margin-top: 20px; /* Ajustar según sea necesario */
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap; /* Permitir que los botones se envuelvan en varias líneas en pantallas pequeñas */
-}
-
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0099cc; /* Azul del botón */
+.back-button {
+    background-color: #0099cc;
     color: white;
+    padding: 15px 25px; /* Aumentar tamaño del botón */
+    margin: 5px;
+    font-size: 18px; /* Aumentar tamaño de la letra */
+    cursor: pointer;
     border: none;
     border-radius: 5px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra interior */
     display: flex;
     align-items: center;
+    justify-content: center; /* Centrar el texto en el botón */
+    width: auto; /* Ajustar el ancho del botón al contenido */
+    min-width: 160px; /* Establecer un ancho mínimo */
+    margin-bottom: 20px;
 }
 
-button:hover {
+.back-button:hover {
     background-color: #007bb5; /* Azul más oscuro al pasar el cursor */
 }
 
-button img.drive-logo {
-    margin-left: 10px; /* Espacio entre el texto y el logo */
-    width: 20px; /* Ajusta el tamaño según sea necesario */
-    height: auto;
+.day {
+    margin-bottom: 20px;
 }
 
-/* Botón de descarga con color diferente */
-button.download {
-    background-color: #ff5722; /* Color diferente para el botón de descarga */
-}
-
-button.download:hover {
-    background-color: #e64a19; /* Color más oscuro al pasar el cursor */
-}
-
-.schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.schedule-table td {
-    vertical-align: top;
+.day-button button {
+    background-color: #007bb5; /* Azul oscuro para el botón de día */
+    color: white;
+    border: none;
+    border-radius: 5px;
     padding: 10px;
-    text-align: justify; /* Justificar el texto */
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: auto;
+    min-width: 160px; /* Establecer un ancho mínimo */
 }
 
-.schedule-section {
-    width: 50%;
+.day-button button:hover {
+    background-color: #005f87; /* Azul más oscuro al pasar el cursor */
+}
+
+.event {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra interior */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.event p {
+    text-align: left; /* Alinear el texto a la izquierda */
+    color: #ffffff; /* Color dorado para el texto */
 }
 
 .image-section {
-    width: 50%;
+    margin-top: 20px;
     text-align: center;
 }
 
 .image-section img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra alrededor de la imagen */
+}
+
+.logo-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 80px; /* Tamaño más pequeño para el logo */
+    height: auto;
+}
+
+.footer {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #888888; /* Color gris para el texto */
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer a {
+    color: #888888; /* Color gris para los enlaces */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 /* Media Queries para responsividad */
 @media (max-width: 600px) {
     .container {
-        padding: 10px;
+        padding: 10px 15px; /* Aumentar espacio en los lados */
     }
 
-    button {
+    .back-button {
         font-size: 14px;
         padding: 8px 15px;
     }
 
-    .buttons {
-        gap: 5px;
+    .day-button button {
+        font-size: 14px;
+        padding: 8px 15px;
+        min-width: auto; /* Ajustar el ancho del botón en pantallas pequeñas */
     }
 
-    .schedule-table td {
-        display: block;
-        width: 100%;
-    }
-
-    .image-section, .schedule-section {
-        width: 100%;
+    .event p {
+        text-align: left; /* Mantener el texto alineado a la izquierda en pantallas pequeñas */
     }
 }
