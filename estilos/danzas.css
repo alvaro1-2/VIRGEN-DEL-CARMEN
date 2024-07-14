@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-    margin: auto;
+    margin: 20px auto;
     padding: 20px;
     max-width: 800px;
     z-index: 3;
@@ -47,7 +47,7 @@ body {
     background-color: rgba(0, 47, 59, 0.8); /* Fondo semitransparente */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
-    padding: auto; /* Agregar espacio a los lados y al fondo */
+    padding: 20px;
 }
 
 .main-title {
@@ -81,27 +81,7 @@ body {
     background-color: #007bb5; /* Azul más oscuro al pasar el cursor */
 }
 
-.day {
-    margin-bottom: 20px;
-}
-
-.day-button button {
-    background-color: #007bb5; /* Azul oscuro para el botón de día */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    width: auto;
-    min-width: 160px; /* Establecer un ancho mínimo */
-}
-
-.day-button button:hover {
-    background-color: #005f87; /* Azul más oscuro al pasar el cursor */
-}
-
-.event {
+.dance {
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
     padding: 20px;
     border-radius: 10px;
@@ -110,17 +90,16 @@ body {
     text-align: left; /* Alinear el texto a la izquierda */
 }
 
-.event p {
-    text-align: left; /* Alinear el texto a la izquierda */
-    color: #ffffff; /* Color dorado para el texto */
+.dance h2 {
+    color: #ffffff; /* Color dorado para los subtítulos */
+    text-shadow: 2px 2px 4px black;
 }
 
-.image-section {
-    margin-top: 20px;
-    text-align: center;
+.dance p {
+    color: #ffffff; /* Color blanco para el texto */
 }
 
-.image-section img {
+.dance img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -133,7 +112,7 @@ body {
 }
 
 .logo {
-    width: 120px; /* Tamaño más pequeño para el logo */
+    width: 80px; /* Tamaño más pequeño para el logo */
     height: auto;
 }
 
@@ -173,13 +152,19 @@ body {
         padding: 8px 15px;
     }
 
-    .day-button button {
-        font-size: 14px;
-        padding: 8px 15px;
-        min-width: auto; /* Ajustar el ancho del botón en pantallas pequeñas */
+    .dance h2 {
+        font-size: 20px; /* Ajustar tamaño del subtítulo en pantallas pequeñas */
     }
 
-    .event p {
-        text-align: left; /* Mantener el texto alineado a la izquierda en pantallas pequeñas */
+    .dance p {
+        font-size: 14px; /* Ajustar tamaño del texto en pantallas pequeñas */
     }
+}
+
+.image-credit {
+    font-size: 12px;
+    color: black;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
 }

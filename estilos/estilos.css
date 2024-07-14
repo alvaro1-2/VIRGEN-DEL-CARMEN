@@ -51,6 +51,8 @@ body {
     z-index: 3;
     position: relative;
     flex: 1; /* Para que ocupe el espacio disponible */
+    background-color: rgba(0, 47, 59, 0.8); /* Fondo semitransparente */
+    border-radius: 10px;
 }
 
 .logo-title {
