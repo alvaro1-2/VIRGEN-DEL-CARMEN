@@ -277,3 +277,55 @@ h2.sub-title {
         line-height: 1.1; /* Ajustar el espaciado entre líneas en pantallas pequeñas */
     }
 }
+
+/* Agrega esta sección a tu archivo estilos.css 
+
+#mapa-lugares-container .responsive-svg {
+    width: 100%;
+    height: auto;
+    transform-origin: center center;
+}
+
+#mapa-lugares-container .rotated {
+    transform: rotate(-90deg);
+    width: auto;
+    height: 100vh;
+    margin-top: 100px; /* Añade margen superior para evitar que se superponga con los botones /
+}
+
+#mapa-lugares-container .map-container {
+    margin-top: 50px; /* Asegura un margen superior para todo el contenedor del mapa /
+    margin-bottom: 150px;
+    margin-left: -20px;
+}
+
+#mapa-lugares-container {
+    padding: 20px; /* Añade relleno al contenedor para ajustar el espacio */
+}
+
+
+/* Agrega esta sección a tu archivo estilos.css de mapa_transito /
+
+#mapa-transito-container .responsive-svg {
+    width: 100%;
+    height: auto;
+    transform-origin: center center;
+}
+
+#mapa-transito-container .rotated {
+    transform: rotate(-90deg);
+    width: auto;
+    height: 100vh;
+    margin-top: 100px; /* Añade margen superior para evitar que se superponga con los botones /
+    margin-left: -20px;
+    margin-bottom: 150px;
+}
+
+#mapa-transito-container .map-container {
+    margin-top: 50px; /* Asegura un margen superior para todo el contenedor del mapa /
+}
+
+#mapa-transito-container {
+    padding: 20px; /* Añade relleno al contenedor para ajustar el espacio /
+}
+*/
