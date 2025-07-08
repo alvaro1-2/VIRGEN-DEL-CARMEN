@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-    <img src="imagenes/imagen_fondo.png" alt="Imagen de fondo" class="background-image">
+    <img src="imagenes/imagen_fondo.png" alt="" class="background-image">
     <div class="container">
         <h1 class="main-title">Lugares Turísticos</h1>
         <div class="buttons">
@@ -16,7 +16,7 @@
 
         <!-- Mirador Tres Cruces -->
         <div class="tourist-place">
-            <img src="imagenes/mirador_tres_cruces.jpg" alt="Mirador Tres Cruces">
+            <img src="imagenes/mirador_tres_cruces.jpg" alt="Vista panorámica del Mirador Tres Cruces" title="Mirador Tres Cruces, Paucartambo">
             <h2>Mirador Tres Cruces</h2>
             <p>El Mirador Tres Cruces, también conocido como «El Balcón del Oriente», es un destino singular en el mundo que ofrece una experiencia única.</p>
             <button class="details-button" onclick="toggleDetails('details1')">Ver más detalles</button>
@@ -42,7 +42,7 @@
 
         <!-- Puente Colonial Carlos III -->
         <div class="tourist-place">
-            <img src="imagenes/puente_colonial_carlos_iii.jpg" alt="Puente Colonial Carlos III">
+            <img src="imagenes/puente_colonial_carlos_iii.jpg" alt="Puente Colonial Carlos III sobre el río" title="Puente Colonial Carlos III, Paucartambo">
             <h2>Puente Colonial Carlos III</h2>
             <p>Construido por disposición de Carlos III de España entre 1716 y 1788.</p>
             <button class="details-button" onclick="toggleDetails('details3')">Ver más detalles</button>
@@ -66,7 +66,7 @@
 
         <!-- Templo Colonial de Paucartambo -->
         <div class="tourist-place">
-            <img src="imagenes/templo_colonial_paucartambo.jpg" alt="Templo Colonial de Paucartambo">
+            <img src="imagenes/templo_colonial_paucartambo.jpg" alt="Fachada del Templo Colonial de Paucartambo" title="Templo Colonial de Paucartambo">
             <h2>Templo Colonial de Paucartambo</h2>
             <p>Conocido como la Iglesia de Nuestra Señora del Rosario, es una destacada iglesia del siglo XVIII ubicada en Paucartambo, Cusco.</p>
             <button class="details-button" onclick="toggleDetails('details4')">Ver más detalles</button>
@@ -91,7 +91,7 @@
 
         <!-- Mirador del Papa Juan Pablo -->
         <div class="tourist-place">
-            <img src="imagenes/mirador_papa_juan_pablo.jpg" alt="Mirador del Papa Juan Pablo">
+            <img src="imagenes/mirador_papa_juan_pablo.jpg" alt="Mirador del Papa Juan Pablo II" title="Mirador Papa Juan Pablo II, Paucartambo">
             <h2>Mirador del Papa Juan Pablo</h2>
             <p>Estatua de Juan Pablo II para recordar su visita en 1985.</p>
             <button class="details-button" onclick="toggleDetails('details5')">Ver más detalles</button>
@@ -115,7 +115,7 @@
 
         <!-- Baños Termales de Chimur -->
         <div class="tourist-place">
-            <img src="imagenes/banos_termales_chimur.jpg" alt="Baños Termales de Chimur">
+            <img src="imagenes/banos_termales_chimur.jpg" alt="Baños Termales de Chimur rodeados de vegetación" title="Baños Termales de Chimur">
             <h2>Baños Termales de Chimur</h2>
             <p>Se encuentra a una altitud de 2800 m.s.n.m. hacia el lado este del poblado de Chimur.</p>
             <button class="details-button" onclick="toggleDetails('details6')">Ver más detalles</button>
@@ -140,7 +140,7 @@
 
         <!-- Sitio Arqueológico de Watoccto -->
         <div class="tourist-place">
-            <img src="imagenes/sitio_arqueologico_watoccto.jpg" alt="Sitio Arqueológico de Watoccto">
+            <img src="imagenes/sitio_arqueologico_watoccto.jpg" alt="Ruinas del Sitio Arqueológico de Watoccto" title="Sitio Arqueológico de Watoccto">
             <h2>Sitio Arqueológico de Watoccto</h2>
             <p>Ubicado a una distancia de 15km de Paucartambo.</p>
             <button class="details-button" onclick="toggleDetails('details7')">Ver más detalles</button>
@@ -165,12 +165,14 @@
         
         <div class="footer">
             <p>Unidad de Informática y de Sistemas de la Municipalidad Provincial de Paucartambo © 2024</p>
-            <p>
+            <div class="footer-links">
                 <a href="#">Últimas Publicaciones</a> · 
                 <a href="#">Facebook</a> · 
                 <a href="mailto:info@paucartambo.gob.pe">Correo</a> · 
-                <a href="#">Ghost</a>
-            </p>
+                <a href="#">Ghost</a> ·
+                <a href="https://github.com/alvaro1-2" target="_blank" title="GitHub" class="footer-icon-link"><span class="icon-svg-github"></span>GitHub</a> ·
+                <a href="https://wa.me/51900247055" target="_blank" title="WhatsApp" class="footer-icon-link"><span class="icon-svg-whatsapp"></span>WhatsApp</a>
+            </div>
         </div>
     </div>
     <script src="scripts/toggle.js"></script>

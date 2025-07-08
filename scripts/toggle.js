@@ -1,9 +1,10 @@
 // scripts/toggle.js
 function toggleDetails(id) {
-    var element = document.getElementById(id);
-    if (element.style.display === 'none' || element.style.display === '') {
-        element.style.display = 'block';
-    } else {
-        element.style.display = 'none';
-    }
+    document.querySelectorAll('.details').forEach(function(el) {
+        if (el.id === id) {
+            el.classList.toggle('open');
+        } else {
+            el.classList.remove('open');
+        }
+    });
 }

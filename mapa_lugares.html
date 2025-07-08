@@ -7,30 +7,29 @@
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-    <img src="imagenes/imagen_fondo.png" alt="Imagen de fondo" class="background-image">
+    <img src="imagenes/imagen_fondo.png" alt="" class="background-image">
     <div id="mapa-lugares-container" class="container">
         <h1 class="main-title">Mapa de Lugares</h1>
         <div class="buttons">
             <button onclick="location.href='index.html'">Volver al Menú Principal</button>
             <button onclick="location.href='mapa_transito.html'">Ver Mapa de Tránsito</button>
-            <button class="download" onclick="location.href='https://drive.google.com/file/d/1JTJEF9ZeBOZSOH7mV8KKO2QMsO8jzl6o/view?usp=sharing'">
-                Descargar Mapa de Lugares
-                <img src="imagenes/drive_logo.png" alt="Google Drive" class="drive-logo">
-            </button>
+            <a href="pdfs/MAPA_LUGARES.pdf" download class="btn-descarga" aria-label="Descargar mapa de lugares en PDF">Descargar Mapa de Lugares (PDF)</a>
         </div>
         <div class="map-container">
-            <object class="responsive-svg rotated" data="imagenes/mapa_lugares.svg" type="image/svg+xml"></object>
+            <object class="responsive-svg rotated" data="imagenes/mapa_lugares.svg" type="image/svg+xml" title="Mapa de lugares turísticos de Paucartambo"></object>
         </div>
         <h2 class="sub-title">Festividad de la Virgen del Carmen 2024</h2>
     </div>
     <div class="footer">
         <p>Unidad de Informática y de Sistemas de la Municipalidad Provincial de Paucartambo © 2024</p>
-        <p>
+        <div class="footer-links">
             <a href="#">Últimas Publicaciones</a> · 
             <a href="#">Facebook</a> · 
             <a href="mailto:info@paucartambo.gob.pe">Correo</a> · 
-            <a href="#">Ghost</a>
-        </p>
+            <a href="#">Ghost</a> ·
+            <a href="https://github.com/alvaro1-2" target="_blank" title="GitHub" class="footer-icon-link"><span class="icon-svg-github"></span>GitHub</a> ·
+            <a href="https://wa.me/51900247055" target="_blank" title="WhatsApp" class="footer-icon-link"><span class="icon-svg-whatsapp"></span>WhatsApp</a>
+        </div>
     </div>
 </body>
 </html>
