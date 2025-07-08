@@ -1,5 +1,5 @@
 <!--
-Proyecto Festividad de la Virgen - Pagina Turistica de la Festividad de la Virgen del Carmen de Paucartambo(Lugares Trísticos, Cronograma de Actividades, etc.)
+Proyecto Festividad de la Virgen - Pagina Turistica de la Festividad de la Virgen del Carmen de Paucartambo(Lugares Turísticos, Cronograma de Actividades, etc.)
 Derechos de Autor (C) 2024 Alvaro
 
 Este programa es software libre: puedes redistribuirlo y/o modificarlo
@@ -22,93 +22,69 @@ junto con este programa. Si no, vea <https://www.gnu.org/licenses/>.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festividad Virgen del Carmen de Paucartambo</title>
     <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <footer>
-      <p>© 2024 Pagina Web Festividad Virgen del Carmen. Licensed under the <a href="https://github.com/tu-usuario/tu-repositorio/blob/master/LICENSE">GNU General Public License v3.0</a>.</p>
-    </footer>
+    <div class="hero-overlay"></div>
     <img src="imagenes/imagen_fondo.png" alt="Imagen de fondo" class="background-image">
-    <div class="container">
-        <div class="logo-title">
-            <img src="imagenes/logo_municipalidad.png" alt="Logo Municipalidad">
-            <h1>Festividad de la Virgen del Carmen 2025</h1>
+    <header class="main-header">
+        <div class="logo-title modern-fade-in">
+            <img src="imagenes/logo_municipalidad.png" alt="Logo Municipalidad" class="logo-muni">
+            <h1 class="main-title">Festividad de la Virgen del Carmen <span class="year">2025</span></h1>
         </div>
-        <div class="header-images">
-            <div class="right">
-                <img src="imagenes/imagen_virgen.png" alt="Imagen Virgen del Carmen">
-            </div>
+        <div class="header-images modern-fade-in">
+            <img src="imagenes/imagen_virgen.png" alt="Imagen Virgen del Carmen" class="virgen-img">
         </div>
-        <div class="buttons">
-            <button onclick="location.href='cronograma.html'">Programa General</button>
-            <button onclick="location.href='lugares_turisticos.html'">Lugares Turísticos</button>
-            <button onclick="location.href='danzas.html'">Danzas</button>
-            <button onclick="location.href='lugares_historicos.html'">Lugares Históricos</button>
-            <button onclick="toggleMapOptions()">Plano de Ubicación</button>
-        </div>
-        <div id="mapOptions" class="map-buttons">
+        <nav class="main-nav modern-slide-in">
+            <button onclick="location.href='cronograma.html'" class="nav-btn">Programa General</button>
+            <button onclick="location.href='lugares_turisticos.html'" class="nav-btn">Lugares Turísticos</button>
+            <button onclick="location.href='danzas.html'" class="nav-btn">Danzas</button>
+            <button onclick="location.href='lugares_historicos.html'" class="nav-btn">Lugares Históricos</button>
+            <button onclick="toggleMapOptions()" class="nav-btn special">Plano de Ubicación</button>
+        </nav>
+        <div id="mapOptions" class="map-buttons modern-fade-in">
             <button onclick="location.href='mapa_transito.html'">Mapa de Tránsito</button>
             <button onclick="location.href='mapa_lugares.html'">Mapa de Lugares</button>
         </div>
-        <div class="description">
-            <p>La Festividad de la Virgen del Carmen en Paucartambo es una celebración tradicional llena de fe, cultura y color. Únase a nosotros para vivir esta experiencia única, descubriendo lugares turísticos, históricos y disfrutando de las danzas y actividades programadas.</p>
+    </header>
+    <main class="main-content">
+        <section class="description modern-fade-in">
+            <p>La Festividad de la Virgen del Carmen en Paucartambo es una celebración tradicional llena de fe, cultura y color. Únete a nosotros para vivir esta experiencia única, descubriendo lugares turísticos, históricos y disfrutando de las danzas y actividades programadas.</p>
+        </section>
+        <section class="emergency-contacts modern-slide-in">
+            <h2><span class="icon-alert">⚠️</span> Teléfonos de Emergencia</h2>
+            <div class="emergency-table-wrapper">
+                <table class="emergency-table">
+                    <tbody>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Gestión de Riesgo</td><td>(+51) 985 850 416</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Bomberos</td><td>(+51) 984 949 105</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> PNP</td><td>(+51) 945 323 880</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> SEDA</td><td>(+51) 953 525 666</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Electro Sur</td><td>(+51) 941 839 207</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Serenazgo Paucartambo</td><td>(+51) 961 735 405, (+51) 984 766 060</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Centro de Salud</td><td>(+51) 951 251 415</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Essalud Paucartambo</td><td>(+51) 942 710 201</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Compañía de Bomberos</td><td>(+51) 984 778 767</td></tr>
+                        <tr><td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> División de Tránsito Paucartambo</td><td>(+51) 983 040 511</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="footer modern-fade-in">
+        <div class="footer-content">
+            <p>Unidad de Informática y de Sistemas de la Municipalidad Provincial de Paucartambo © 2024</p>
+            <p>
+                <a href="#">Últimas Publicaciones</a> · 
+                <a href="#">Facebook</a> · 
+                <a href="mailto:info@paucartambo.gob.pe">Correo</a> · 
+                <a href="#">Ghost</a>
+            </p>
+            <!--<p class="license">© 2024 Página Web Festividad Virgen del Carmen. Licenciado bajo la <a href="https://github.com/tu-usuario/tu-repositorio/blob/master/LICENSE">GNU General Public License v3.0</a>.</p>-->
         </div>
-    </div>
-    <div class="container">
-        <div class="emergency-contacts">
-            <h2>TELÉFONOS DE EMERGENCIA</h2>
-            <table>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Gestión de Riesgo</td>
-                    <td>(+51) 985 850 416</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Bomberos</td>
-                    <td>(+51) 984 949 105</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> PNP</td>
-                    <td>(+51) 945 323 880</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> SEDA</td>
-                    <td>(+51) 953 525 666</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Electro Sur</td>
-                    <td>(+51) 941 839 207</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Serenazgo Paucartambo</td>
-                    <td>(+51) 961 735 405, (+51) 984 766 060</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Centro de Salud</td>
-                    <td>(+51) 951 251 415</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Essalud Paucartambo</td>
-                    <td>(+51) 942 710 201</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> Compañía de Bomberos</td>
-                    <td>(+51) 984 778 767</td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/telefono_icono.png" alt="Teléfono" class="icono-telefono"> División de Tránsito Paucartambo</td>
-                    <td>(+51) 983 040 511</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Unidad de Informática y de Sistemas de la Municipalidad Provincial de Paucartambo © 2024</p>
-        <p>
-            <a href="#">Últimas Publicaciones</a> · 
-            <a href="#">Facebook</a> · 
-            <a href="mailto:info@paucartambo.gob.pe">Correo</a> · 
-            <a href="#">Ghost</a>
-        </p>
-    </div>
+    </footer>
     <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /*
-Proyecto Festividad de la Virgen - Pagina Turistica de la Festividad de la Virgen del Carmen de Paucartambo(Lugares Trísticos, Cronograma de Actividades, etc.)
+Proyecto Festividad de la Virgen - Pagina Turistica de la Festividad de la Virgen del Carmen de Paucartambo(Lugares Turísticos, Cronograma de Actividades, etc.)
 Derechos de Autor (C) 2024 Alvaro
 
 Este programa es software libre: puedes redistribuirlo y/o modificarlo
@@ -24,3 +24,35 @@ function toggleMapOptions() {
         mapOptions.style.display = 'none';
     }
 }
+
+// Animaciones de aparición para los elementos principales
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.modern-fade-in').forEach((el, i) => {
+        el.style.opacity = 0;
+        setTimeout(() => {
+            el.style.opacity = 1;
+            el.style.transition = 'opacity 1.2s';
+        }, 200 + i * 200);
+    });
+    document.querySelectorAll('.modern-slide-in').forEach((el, i) => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateX(-40px)';
+        setTimeout(() => {
+            el.style.opacity = 1;
+            el.style.transform = 'translateX(0)';
+            el.style.transition = 'opacity 1.2s, transform 1.2s';
+        }, 400 + i * 200);
+    });
+
+    // Efecto de onda al hacer click en los botones principales
+    document.querySelectorAll('.nav-btn, .map-buttons button').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            const circle = document.createElement('span');
+            circle.className = 'ripple';
+            circle.style.left = (e.offsetX - 10) + 'px';
+            circle.style.top = (e.offsetY - 10) + 'px';
+            this.appendChild(circle);
+            setTimeout(() => circle.remove(), 600);
+        });
+    });
+});
