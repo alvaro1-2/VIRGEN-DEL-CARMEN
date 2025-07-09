@@ -110,13 +110,24 @@ body {
 }
 
 .virgen-img {
-    max-width: 180px;
+    max-width: 400px;
     margin: 0 auto 10px auto;
     display: block;
     border-radius: 22px;
     background: #e3f2fd;
     box-shadow: 0 4px 24px #b3e5fc;
     transition: transform 0.5s, box-shadow 0.5s;
+}
+@media (max-width: 400px) {
+    .virgen-img {
+        max-width: 150px;
+    }
+}
+@media (max-width: 380px) {
+    .virgen-img {
+        max-width: 90vw;
+        height: auto;
+    }
 }
 .virgen-img:hover {
     transform: scale(1.05) rotate(-2deg);
@@ -566,7 +577,8 @@ body {
         width: 60px;
     }
     .virgen-img {
-        max-width: 60px;
+        max-width: 98vw;
+        height: auto;
     }
     .main-content, .container {
         gap: 10px;
